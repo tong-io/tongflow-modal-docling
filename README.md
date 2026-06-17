@@ -1,6 +1,6 @@
 # tongflow-modal-docling
 
-Official TongFlow plugin. Document-to-text extraction with **Docling**, running on [Modal](https://modal.com). Parses PDFs and office documents into plain text.
+Official [TongFlow](https://github.com/tong-io/tongflow) plugin. Document-to-text extraction with **Docling**, running on [Modal](https://modal.com). Parses PDFs and office documents into plain text.
 
 ## Capabilities
 
