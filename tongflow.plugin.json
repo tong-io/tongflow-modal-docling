@@ -1,4 +1,9 @@
 {
+    "plugin": {
+        "name": "Docling",
+        "description": "Document-to-text extraction with Docling (IBM) — parse PDFs and office documents into plain text.",
+        "icon": "/plugins/tongflow-modal-docling.svg"
+    },
     "env": [
         {
             "key": "MODAL_TOKEN_ID",
