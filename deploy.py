@@ -19,6 +19,11 @@ from tongflow import deploy
 
 
 
+# Slots this plugin is the default implementation of: the node picker lists
+# it first and a newly added node preselects it. Read statically by the
+# scanner (never executed), so any SDK version imports this file fine.
+TONGFLOW_DEFAULT_SLOTS = ["parse-document"]
+
 _cfg: dict[str, Any] = {}
 _ = _cfg
 
