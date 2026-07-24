@@ -45,7 +45,7 @@ image = (
         "libglu1-mesa",
     )
     .pip_install(
-        "tongflow==0.2.13", "fastapi[standard]",
+        "tongflow==0.2.16", "fastapi[standard]",
         "docling",
         "pdf2image",
         "pillow",
