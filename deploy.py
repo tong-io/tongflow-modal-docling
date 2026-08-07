@@ -176,13 +176,13 @@ def _parse_document_core(task: dict) -> dict:
         return {"success": False, "error": error_msg}
 
 
-@app.function(cpu=2.0, memory=4096, timeout=600, secrets=[secrets], scaledown_window=5)
+@app.function(cpu=2.0, memory=4096, timeout=600, secrets=[secrets], scaledown_window=2)
 def parse_document(task: dict) -> dict:
     return _parse_document_core(task)
 
 
 @deploy
-@app.cls(cpu=2.0, memory=4096, timeout=600, secrets=[secrets], scaledown_window=5)
+@app.cls(cpu=2.0, memory=4096, timeout=600, secrets=[secrets], scaledown_window=2)
 class Inference:
     @modal.method()
     @node_slot(NodeSlots.PARSE_DOCUMENT)
